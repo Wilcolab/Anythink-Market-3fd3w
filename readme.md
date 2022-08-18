@@ -8,7 +8,16 @@ Please find more info about each part in the relevant Readme file ([frontend](fr
 
 When implementing a new feature or fixing a bug, please create a new pull request against `main` from a feature/bug branch and add `@vanessa-cooper` as reviewer.
 
-## How to run locally?
-1. [Install Docker](https://docs.docker.com/get-docker/)
-2. [Install Docker Compose](https://docs.docker.com/compose/install/)
-3. Run `docker-compose up`. 
+## First setup
+
+To start using the repo, Docker needs to be installed. 
+
+If you don't have it on your machine, you can download it from the (Docker website)[https://docs.docker.com/get-docker/].
+
+To check that the installation of the required files was succsessful, you can run `docker -v` and `docker-compose -v`. It will yeld the installed version if all went well.
+
+After this, you can run on your terminal `docker-compose up` and, on your browser, go to (http://localhost:3000/api/ping)[http://localhost:3000/api/ping] to check that the backend is up and running.
+
+If everything works properly, you can go to (https://localhost:3001/register)[https://localhost:3001/register] and create a new user.
+
+That's it, the environment is ready, well done!
