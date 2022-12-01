@@ -11,12 +11,12 @@ const CommentInput = (props) => {
   const [body, setBody] = useState("");
 
   const handleSetBody = (ev) => {
-    this.setState({ body: ev.target.value });
+    setBody(ev.target.value);
   };
 
   const createComment = async (ev) => {
     ev.preventDefault();
-    agent.Comments.create(this.props.slug, {
+    agent.Comments.create(props.slug, {
       body,
     }).then((payload) => {
       props.onSubmit(payload);
